@@ -1,8 +1,8 @@
 class CowsayApj < Formula
   desc "Configurable talking characters in ASCII art"
   homepage "https://cowsay.diamonds"
-  url "https://github.com/cowsay-org/cowsay/archive/v3.6.0.tar.gz"
-  sha256 "be92f1778b2481944ded8d13f0b5f96315ca49ab087246f9cdf8dbc70a112fae"
+  url "https://github.com/cowsay-org/cowsay/archive/v3.6.1.tar.gz"
+  sha256 "39b57f3de34f0d0c8ad7f6b75fcf334ce8f54700346930c418655711303dd397"
   head "https://github.com/cowsay-org/cowsay.git"
 
   conflicts_with "cowsay", :because => "cowsay-apj is a fork of cowsay"
