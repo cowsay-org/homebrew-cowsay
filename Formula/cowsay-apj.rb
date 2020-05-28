@@ -1,14 +1,14 @@
 class CowsayApj < Formula
   desc "Configurable talking characters in ASCII art"
   homepage "https://cowsay.diamonds"
-  url "https://github.com/cowsay-org/cowsay/archive/v3.04.01.tar.gz"
-  sha256 "321dbe731a89cc9df441d2f0de22a506615d3ed7e2ed64b0b72acebac91de8a4"
+  url "https://github.com/cowsay-org/cowsay/archive/v3.5.0.tar.gz"
+  sha256 "56defb293df7629883826aac9fdfb888aefb650f98b705c7ec5d774e0b15cee1"
+  head "https://github.com/cowsay-org/cowsay.git"
 
   conflicts_with "cowsay", :because => "cowsay-apj is a fork of cowsay"
 
   def install
-    system "/bin/sh", "install.sh", prefix
-    mv prefix/"man", share
+    system "make", "install", "prefix=#{prefix}"
   end
 
   test do
