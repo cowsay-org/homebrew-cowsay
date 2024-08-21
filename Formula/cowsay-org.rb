@@ -3,7 +3,7 @@ class CowsayOrg < Formula
   homepage "https://cowsay.diamonds"
   url "https://github.com/cowsay-org/cowsay/archive/v3.8.2.tar.gz"
   sha256 "f6eeee3c2d4f61bc9b68b0717181f9b0affcfd174b06cd63a5b891b5f9e2383c"
-  head "https://github.com/cowsay-org/cowsay.git"
+  head "https://github.com/cowsay-org/cowsay.git", branch: "main"
 
   conflicts_with "cowsay", :because => "cowsay-org is a fork of cowsay"
 
