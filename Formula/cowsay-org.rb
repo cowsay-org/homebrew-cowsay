@@ -1,3 +1,7 @@
+# Note: This formula is basically obsolete as of 2024-11, because core Homebrew picked
+# up cowsay-org's cowsay fork, and now this formula is only used for debugging cowsay
+# development. You dn't need it just to install cowsay; regular `brew install cowsay` will
+# now do that.
 class CowsayOrg < Formula
   desc "Configurable talking characters in ASCII art, cowsay-org's fork"
   homepage "https://cowsay.diamonds"
